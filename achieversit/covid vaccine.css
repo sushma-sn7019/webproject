@@ -1,0 +1,277 @@
+*{
+margin:0;
+font-family: 'Roboto', sans-serif;
+}
+.header{
+background-color:black;
+padding:20px;
+padding-left:60px;
+display:flex;
+height:50px;
+}
+.header1{
+color:white;
+display:flex;
+list-style:none;
+padding-left:750px;
+padding-top:23px;
+}
+#l1,#l2,#l3,#l4{
+padding-left:30px;
+}
+#l1:hover,#l2:hover,#l3:hover,#l4:hover,
+#l1:focus,#l2:focus,#l3:focus,#l4:focus{
+color:orangered;
+}
+.title h2{
+text-align:center;
+color:red;
+padding:15px;
+}
+.title hr{
+border-top:2px solid gainsboro;
+border-bottom:none;
+}
+#contact.active{
+transform:translate(0%,0%);
+}
+#contact h3{
+font-size:23px;
+font-weight:500;
+padding:15px;
+display:inline-block;
+}
+#contact label{
+display:block;
+padding:15px
+}
+.frm1{
+display:flex;
+flex-wrap:wrap;
+}
+#contact input{
+padding:15px;
+margin-left:15px;
+margin-top:-7px;
+font-size:17px;
+font-weight:normal;
+width:150px;
+height:10px;
+background:white;
+color:black;
+border-radius:0px;
+text-align:left;
+outline:none;
+border:1px solid lightgrey;
+}
+#reg{
+text-align:center;
+padding-right:25px;
+margin:15px;
+border: 1px solid blue;
+background:blue;
+width:80px;
+height:20px;
+color:white;
+padding:3px;
+border-radius:2px;
+margin-left:1400px;
+}
+#reg input{
+border:none;
+background:blue;
+color:white;
+}
+.footer{
+margin-left:-30px;
+margin-right:1px;
+bottom:0;
+position:fixed;
+z-index:1030;
+border:1px solid black;
+width:1600px;
+background-color:black;
+}
+.footer1 ,.footer2 ,.footer3{
+padding-left:200px;
+border:1px solid black;
+background-color:black;
+width:300px;
+}
+.footer1{
+color:lightgreen;
+margin:200px;
+padding:10px;
+}
+.footer2{
+color:blue;
+}
+.footer2:hover{
+color:#4db8ff;
+}
+.footer3{
+color:orangered;
+}
+.footer p{
+display:inline;
+top:-10px;
+position:relative;
+color:white;
+}
+.footer p:hover{
+color:orangered;
+}
+#parent{
+display:flex;
+align-items:center;
+flex:1;
+justify-content:right;
+background-color:white;
+margin-left:20px;
+overflow:hidden;
+}
+.child input{
+border-style:none;
+font-size:16px;
+background-color:white;
+text-align:center;
+width:120px;
+height:30px;
+border:1px solid lightgrey;
+box-shadow: 0 2px 8px 0 rgb(32 33 36 / 10%);
+margin:1px;
+background:lightgrey;
+color:black;
+font-weight:600;
+}
+#parent .child:last-child{
+width:120px;
+height:32px;
+margin:0.5px;
+}
+.star{
+color:red;
+padding:3px;
+}
+.dob input{
+color:grey;
+}
+#phone input{
+width:350px;
+}
+#dob input{
+color:grey;
+width:270px;
+}
+#aadhar input{
+width:230px;
+}
+#Gender input{
+color:grey;
+width:40px;
+}
+#Gender label{
+padding:15px;
+padding-bottom:5px;
+width:370px;
+}
+.cg1{
+color:grey;
+font-weight:normal;
+text-align:left;
+margin-left:-10px;
+}
+#tested input{
+color:grey;
+width:40px;
+}
+#tested label{
+padding-bottom:5px;
+}
+#symptoms{
+line-height:1.7;
+}
+#symptoms input{
+color:grey;
+height:13px;
+width:40px;
+}
+#symptoms label{
+padding-bottom:4px;
+}
+.cg{
+margin-left:-10px;
+color:grey;
+font-weight:normal;
+text-align:left;
+}
+#address input{
+width:330px;
+margin:10px;
+}
+.cg2{
+color:grey;
+font-weight:normal;
+text-align:left;
+margin-left:-10px;
+}
+#check input{
+margin:-55px;
+color:grey;
+height:13px;
+}
+#send input,#delete input{
+margin: 40px;
+margin-left: -100px;
+height: 35px;
+width: 90px;
+font-size: 18px;
+text-align: center;
+align-items: center;
+background-color: blue;
+color: white;
+border: none;
+padding:2px 10px;
+}
+#delete input{
+background-color:red;
+height: 35px;
+margin-left:-30px;
+}
+#close{
+top:2%;
+right:3%;
+position:absolute;
+width:30px;
+height:20px;
+text-align:center;
+padding-top:5px;
+}
+#close:hover{
+background:red;
+color:white;
+}
+#overlay{
+position:fixed;
+opacity:0.2;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color:rgba(0,0,0,.5);
+pointer-events:none;
+}
+#contact{
+border:1px solid whitesmoke;
+background-color:white;
+width:800px;
+height:700px;
+text-align:left;
+font-weight:bold;
+top:3%;
+left:23%;
+position:fixed;
+border-radius:5px;
+display:none;
+transform: translate(0%,0%);
+}

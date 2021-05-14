@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width-device-width,initial-scale=1.0">
+      <title>Covid vaccine</title>
+      <link rel="stylesheet" type="text/css" href="covid vaccine.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <script src="covidvaccine.js" defer></script>
+   </head>
+   <body>
+      <div>
+      <div class="header">
+         <img src="backwhite.jpg" alt="logo">
+         <ul class="header1">
+            <li id="l1">Corporate Training</li>
+            <li id="l2">Placements Page</li>
+            <li id="l3">Reviews</li>
+            <li id="l4">blog</li>
+         </ul>
+      </div>
+      <div class="title">
+      <h2>COVID-19 Vaccine Registration</h2>
+      <hr>
+      <div>
+      <div id="reg" onclick="on()" style.display = "block";>
+         <span class="reg1"><i class="fas fa-plus-circle  fa-1x"></i></span><input type="submit" value="Register">
+      </div>
+      <div id="parent">
+         <div class="child"><input type="button" value="FName"></div>
+         <div class="child"><input type="submit" value="LName"></div>
+         <div class="child"><input type="submit" value="Aadhar"></div>
+         <div class="child"><input type="submit" value="Contact"></div>
+         <div class="child"><input type="submit" value="DOB"></div>
+         <div class="child"><input type="submit" value="Gender"></div>
+         <div class="child"><input type="submit" value="C_history"></div>
+         <div class="child"><input type="submit" value="Symptoms"></div>
+         <div class="child"><input type="submit" value="Address"></div>
+         <div class="child"><input type="submit" value="Landmark"></div>
+         <div class="child"><input type="submit" value="pincode"></div>
+         <div class="child"><input type="submit" value="State"></div>
+         <div class="child"><input type="button" value="sl"></div>
+      </div>
+      <br>
+      <div class="footer">
+         <span class="footer1"><i class="fab fa-whatsapp fa-3x"></i></span>
+         <span class="footer2">
+            <i class="fas fa-phone-volume fa-3x"></i>
+            <p> Call us on : +91 8431-040-457</p>
+         </span>
+         <span class="footer3"><i class="far fa-envelope fa-3x"></i></span>
+         <p> Request A Call Back</p>
+      </div>
+      <div id="overlay"></div>
+      <form action='#' id="contact" onclick="off()" style.display = "block";>
+         <h3>Register Covid-19 Vaccine</h3>
+         <span id="close"><i class="fas fa-times fa-1x"></i></span>
+         <hr>
+         <div class="frm1">
+            <div class="name"><label for="NAME">NAME<span class="star">*</span></label>
+               <input type="text" id="name" placeholder="Enter First Name" value="" minlength="5"maxlength="15" required>
+               <input type="text" id="name" placeholder="Enter Last Name" value="" minlength="1"minlength="10" required>
+            </div>
+            <div id="aadhar"><label for="Aadhar">Aadhar No<span class="star">*</span></label>
+               <input type="text" id="aadhar" name="Aadhar" placeholder="Enter 12 Digit Aadhar No" value="" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" maxlength="12" required>
+            </div>
+            <div id="phone"><label for="Contact Number">Contact Number<span class="star">*</span></label>
+               <input type="tel" id="phone" name="Contact Number" placeholder="Enter Contact Number" value="" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" maxlength="10" required>
+            </div>
+            <div id="dob"><label for="DOB">Date Of Birth<span class="star">*</span></label>
+               <input type="date" id="dob" name="Date Of Birth" placeholder="dd/mm/yyyy" value="" required>
+            </div>
+            <div id="Gender"><label for="gender">Gender<span class="star">*</span></label>
+               <input type="radio" id="Gender" name="Gender" value="male"/><span class="cg1">Male</span>
+               <input type="radio" id="Gender" name="Gender" value="female"/><span class="cg1">Female</span>
+               <input type="radio" id="Gender" name="Gender" value="others"/><span class="cg1">Others</span>
+            </div>
+            <div id="tested"><label for="tested">Have you been diagnised with covid-19?<span class="star">*</span></label>
+               <input type="radio" id="tested" name="tested" value="Yes"/><span class="cg1">Yes</span>
+               <input type="radio" id="tested" name="tested" value="No"/><span class="cg1">No</span>
+            </div>
+            <div id="symptoms"><label for="symptoms">Please Check all symptoms that apply?<span class="star">*</span></label>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Loss of Taste/Smell"><span class="cg">Loss of Taste/Smell</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Difficulty Breathing"><span class="cg">Difficulty Breathing</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Cough"><span class="cg">Cough</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Running Nose"><span class="cg">Running Nose</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Body Pains"><span class="cg">Body Pains</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Headache"><span class="cg">Headache</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Sore Throat"><span class="cg">Sore Throat</span>
+               <input type="checkbox" id="symptoms" name="symptoms" value="Fever"><span class="cg">Fever</span>
+            </div>
+            <div id="address"><label for="address">Address<span class="star">*</span></label>
+               <input type="text" id="address" placeholder="Address" value=""  required>
+               <input type="text" id="address" placeholder="Landmark" value=""  required>
+               <input type="text" id="address" placeholder="pincode" value=""  required>
+               <input type="text" id="address" placeholder="State" value="" required>
+            </div>
+            <div id="check"><input type="checkbox" id="check" name="check" value="check" required><span class="cg2">Check me out</span></div>
+            <span id="send"><input type="Submit" value="submit"></span>
+            <span id="delete"><input type="Reset" value="Reset"></span>
+         </div>
+      </form>
+   </body>
+</html>
